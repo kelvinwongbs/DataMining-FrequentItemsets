@@ -18,7 +18,7 @@ for key, key_value in groupby(data, itemgetter(0)):
     count = 0
     # iterate values
     for key, value in key_value:
-        count += 1
+        count += int(value)
         if key == 'N':
             N = count
         else:
