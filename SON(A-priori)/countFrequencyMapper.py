@@ -7,7 +7,7 @@ for line in sys.stdin:
     pair, value = line.strip().split('\t', 1)
     w = pair.split(',')
     candidatePairs.add((w[0], w[1]))
-# cleanup
+# cleanup: count frequency of candidate pairs
 N = 0
 with open("shakespeare_basket1", "r") as f:
     for line in f:
