@@ -3,7 +3,7 @@ import itertools
 
 # setup: read candidate pairs
 candidatePairs = set()
-with open("candidate_pairs", "r") as f:
+with open("candidate_pairs", "r") as f:   # output from previous MapReduce job
     for line in f:
         pair, value = line.strip().split('\t', 1)
         w = pair.split(',')
