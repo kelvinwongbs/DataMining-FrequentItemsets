@@ -27,7 +27,7 @@ Candidate frequent pair iff it is formed by frequent items AND hashed to a frequ
 Second pass:  
 count frequency of each candidate frequent pair, find the true frequent pairs
 
-**SON**  
+**SON (using Hadoop streaming)**  
 First MapReduce job:  
 **aprioriMapper.py**: each mapper takes a subset of the dataset, finds all the frequent pairs in the subset using A-priori (can be replaced by PCY)  
 **candidatePairReducer.py**: combine the frequent pairs of all subsets, output them as candidate frequent pairs
